@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menu</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f8ff;
+            color: #333;
+            margin: 0;
+            padding: 0;
+            scroll-behavior: smooth;
+        }
+
+        header {
+            background-color: #f976af;
+            color: #fff;
+            padding: 20px;
+            text-align: center;
+        }
+
+        header h1 {
+            color: #ffffff;
+            font-size: 2em;
+            margin: 0;
+        }
+
+        nav ul {
+            display: flex;
+            flex-wrap: wrap;
+            list-style: none;
+            padding: 0;
+            margin: 10px 0;
+            justify-content: center;
+        }
+
+        nav ul li {
+            margin: 0 15px;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: #ffffff;
+            font-weight: bold;
+        }
+
+        nav ul li a:hover {
+            color: #f976af;
+        }
+
+        main {
+            max-width: 1000px;
+            margin: 20px auto;
+            padding: 10px;
+        }
+
+        section {
+            background-color: #f9f9f9;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            margin-bottom: 20px;
+        }
+
+        section h2 {
+            color: #ff69b4;
+            font-size: 1.5em;
+            margin-top: 0;
+        }
+
+        ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        #sabores {
+            padding: 8px 0;
+            border-bottom: 1px solid #ddd;
+        }
+
+        li:last-child {
+            border-bottom: none;
+        }
+
+        footer {
+            background-color: #ffcccb;
+            text-align: center;
+            padding: 15px;
+            font-size: 0.9em;
+        }
+
+        footer p {
+            margin: 0;
+            color: #333;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>Doce Sonhos</h1>
+        <nav>
+            <ul>
+                <li><a href="#bolos">Bolos</a></li>
+                <li><a href="#tortas">Tortas</a></li>
+                <li><a href="#pudins">Pudins</a></li>
+                <li><a href="#doces">Doces Tradicionais</a></li>
+                <li><a href="#cookies">Cookies e Biscoitos</a></li>
+                <li><a href="#sobremesas">Sobremesas Geladas</a></li>
+                <li><a href="#crepes-waffles">Crepes e Waffles</a></li>
+                <li><a href="#paves">Pavês</a></li>
+                <li><a href="#cheasecake">Cheasecake</a></li>
+                <li><a href="#cupcakes">Cupcakes</a></li> <!-- Novo link de navegação -->
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section id="bolos">
+            <h2>Bolos - R$ 40,00</h2>
+            <ul id="sabores">
+                <li>Bolo de chocolate</li>
+                <li>Bolo de cenoura com cobertura de chocolate</li>
+                <li>Bolo de limão</li>
+                <li>Bolo de baunilha</li>
+                <li>Bolo de red velvet</li>
+            </ul>
+        </section>
+
+        <section id="tortas">
+            <h2>Tortas - R$ 34,90</h2>
+            <ul id="sabores">
+                <li>Torta de frutas (morango, abacaxi)</li>
+                <li>Torta de limão</li>
+                <li>Torta de chocolate</li>
+                <li>Torta de maracujá</li>
+            </ul>
+        </section>
+
+        <section id="pudins">
+            <h2>Pudins - R$ 29,90</h2>
+            <ul id="sabores">
+                <li>Pudim de leite condensado</li>
+                <li>Pudim de chocolate</li>
+                <li>Pudim de coco</li>
+            </ul>
+        </section>
+
+        <section id="doces">
+            <h2>Doces Tradicionais - R$ 1,50 cada</h2>
+            <ul id="sabores">
+                <li>Brigadeiro</li>
+                <li>Beijinho</li>
+                <li>Cajuzinho</li>
+                <li>Quindim</li>
+            </ul>
+        </section>
+
+        <section id="cookies">
+            <h2>Cookies e Biscoitos - R$ 3,00</h2>
+            <ul id="sabores">
+                <li>Cookie de chocolate</li>
+                <li>Biscuit de polvilho</li>
+                <li>Biscoito amanteigado</li>
+            </ul>
+        </section>
+
+        <section id="sobremesas">
+            <h2>Sobremesas Geladas - R$ 15,00</h2>
+            <ul id="sabores">
+                <li>Sorvete de Chocolate</li>
+                <li>Sorvete de Brigadeiro</li>
+                <li>Sorvete de Flocos</li>
+                <li>Sorvete de Morango</li> 
+                <li>Sorvete de Limão</li>  
+                <li>Sorvete de Creme</li> 
+                <li>Sorvete de Menta com Chocolate</li>
+                <li>Açaí na Tigela</li>
+                <li>Paleta Mexicana</li>
+            </ul>
+        </section>
+
+        <section id="milkshake">
+            <h2>Milkshake - R$ 20,00</h2>
+            <ul id="sabores">
+                <li>Milkshake de Chocolate</li>
+                <li>Milkshake de Morango</li>
+                <li>Milkshake de Baunilha</li>
+                <li>Milkshake de Oreo</li>
+                <li>Milkshake de Nutella</li>
+                <li>Milkshake de Amendoim</li>
+                <li>Milkshake de Coco</li>
+                <li>Milkshake de Banana</li>
+                <li>Milkshake de Café</li>
+                <li>Milkshake de Maracujá</li>
+            </ul>
+        </section>
+
+        <section id="crepes-waffles">
+            <h2>Crepes e Waffles</h2>
+            <ul id="sabores">                
+                <li>Crepe de nutella com morangos</li>
+                <li>Crepe de doce de leite</li>
+                <li>Waffle com sorvete e calda de chocolate</li>
+            </ul>
+        </section>
+
+        <section id="paves">
+            <h2>Pavês - R$ 20,90</h2>
+            <ul id="sabores">
+                <li>Pavê de chocolate</li>
+                <li>Pavê de maracujá</li>
+                <li>Pavê de frutas</li>
+            </ul>
+        </section>
+
+        <section id="cheasecake">
+            <h2>Cheasecake - R$ 65,90</h2>
+            <ul id="sabores">
+                <li>Cheasecake de amora</li>
+                <li>Cheasecake de morango</li>
+                <li>Cheasecake de cereja</li>
+            </ul>
+        </section>
+
+
+        <section id="cupcakes">
+            <h2>Cupcakes - R$ 3,99</h2>
+            <ul id="sabores">
+                <li>Cupcake de chocolate</li>
+                <li>Cupcake de baunilha</li>
+                <li>Cupcake de red velvet</li>
+                <li>Cupcake de limão</li>
+            </ul>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 Doce Sonhos. Todos os direitos reservados.</p>
+    </footer>
+</body>
+
+</html>

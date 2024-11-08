@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Doce Sonhos</title>
+
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f8f8f8;
+            margin: 0;
+            padding: 0;
+            color: #333;
+        }
+
+        header {
+            background-color: #f976af;
+            color: white;
+            padding: 20px;
+            text-align: center;
+            border-bottom: 3px solid #6db8ff;
+        }
+
+        nav {
+            text-align: center;
+            margin: 10px 0;
+            font-size: 1.1em;
+        }
+
+        nav a {
+            margin: 0 15px;
+            text-decoration: none;
+            color: #6db8ff;
+            padding: 10px;
+            transition: color 0.3s;
+        }
+
+        nav a:hover {
+            color: #f976af;
+        }
+
+        .container {
+            width: 80%;
+            margin: 0 auto;
+        }
+
+        .banner {
+            background-image: url('');
+            background-size: cover;
+            text-align: center;
+            color: white;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 2.5em;
+            font-weight: bold;
+            height: 300px;
+            margin-bottom: 40px;
+        }
+
+        .banner h2 {
+            background-color: #f976af;
+            padding: 10px 20px;
+            border-radius: 5px;
+        }
+
+        .content {
+            margin: 40px 0;
+            text-align: center;
+        }
+
+        .products {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+            gap: 20px;
+            padding: 0 20px;
+        }
+
+        .product {
+            margin: 20px;
+            text-align: center;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            padding: 10px;
+            background: white;
+            transition: transform 0.3s;
+        }
+
+        .product:hover {
+            transform: translateY(-5px);
+        }
+
+        .product img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+            border-radius: 8px;
+        }
+
+        .product p {
+            margin: 10px 0;
+            font-weight: bold;
+        }
+
+        .cart {
+            margin: 20px 0;
+            text-align: center;
+        }
+
+        .cart h3 {
+            margin: 10px 0;
+        }
+
+        .cart-items {
+            margin: 10px 0;
+            padding: 10px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            background: #f1f1f1;
+        }
+
+        .cart-total {
+            font-size: 1.5em;
+            margin-top: 20px;
+        }
+
+        footer {
+            background-color: #f976af;
+            color: white;
+            padding: 20px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .social-media {
+            display: flex;
+            gap: 15px;
+            font-size: 1.5em;
+        }
+
+        .social-media a {
+            color: white;
+            text-decoration: none;
+            transition: color 0.3s;
+        }
+
+        .social-media a:hover {
+            color: #ffeb3b;
+        }
+
+        button {
+            background-color: #6db8ff;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+            margin-top: 10px;
+        }
+
+        button:hover {
+            background-color: #5a9bd4;
+        }
+
+        @media only screen and (max-width: 480px){
+
+            .banner {
+                margin: 0;
+                padding: 0;
+                height: 100px;
+            }
+            .banner h2 {
+                width: 100%;
+
+                font-size: 28px;
+                
+            }
+            /* nav {
+                width: 100%;
+            }
+            
+            nav a {
+                padding: 0;
+                margin: 0;
+
+            } */
+
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>Doce Sonhos</h1>
+        <p>O Paraíso dos Melhores Doces</p>
+    </header>
+    <nav>
+        <a href="./produtos.html">Menu</a>
+        <a href="./pedidos.html">Faça seu pedido</a>
+        <a href="https://www.instagram.com/docee_sonhos_/?utm_source=ig_web_button_share_sheet">Contato</a>
+        <a href="./cadastro.html">Cadastre-se</a>
+        <a href="./sobre.html">Sobre</a>
+    </nav>
+
+    <div class="container">
+        <div class="banner">
+            <h2>Bem-vindo(a) ao Doce Sonhos!</h2>
+        </div>
+
+        <div class="content">
+            <h2>Nossos Produtos</h2>
+            <p>Oferecemos uma grande variedade de doces, bolos e sobremesas, feitos com os melhores ingredientes para
+                garantir a sua satisfação.</p>
+            <div class="products" id="produtos">
+                <div class="product">
+                    <img src="./brigadeiro.png" alt="Brigadeiro">
+                    <p>Brigadeiro</p>
+                </div>
+                <div class="product">
+                    <img src="./cheesecake.png" alt="Cheesecake">
+                    <p>Cheesecake</p>
+                </div>
+                <div class="product">
+                    <img src="./macarons.png" alt="Macarons">
+                    <p>Macarons</p>
+                </div>
+                <div class="product">
+                    <img src="./bolochocolate.png" alt="Bolo de Chocolate">
+                    <p>Bolo de Chocolate</p>
+                </div>
+                <div class="product">
+                    <img src="./pave.png" alt="Pavê de Chocolate">
+                    <p>Pavê de Chocolate</p>
+                </div>
+                <div class="product">
+                    <img src="./tortalimao.png" alt="Torta de Limão">
+                    <p>Torta de Limão</p>
+                </div>
+                <div class="product">
+                    <img src="./cupkake.png" alt="Cupkake">
+                    <p>Cupkake</p>
+                </div>
+                <div class="product">
+                    <img src="./milkshake.png" alt="Milkshake">
+                    <p>Milkshake</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <div class="social-media">
+            
+            <a  href="https://www.instagram.com/docee_sonhos_/?utm_source=ig_web_button_share_sheet"
+                target= "_blank">Instagram</a>
+
+            <a  href= "https://www.facebook.com/ceu_dos_doces" target="_blank">Facebook</a>
+
+            <a  href="https://www.twitter.com/ceu_dos_doces" target="_blank">Twitter</a>
+        </div>
+        <p>&copy; 2024 Doce Sonhos</p>
+    </footer>
+</body>
+
+</html>
